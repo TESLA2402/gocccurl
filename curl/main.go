@@ -39,7 +39,6 @@ func main() {
 
 	if method == "POST" || method == "PUT" {
 		data := flag.Arg(2)
-		fmt.Println(data)
 		req, err = http.NewRequest(method, url, strings.NewReader(data))
 		if err != nil {
 			fmt.Println("Error creating request:", err)
@@ -93,7 +92,5 @@ func main() {
 		fmt.Println("Error reading response body:", err)
 		return
 	}
-
-	// Print the response data
 	fmt.Println(string(body))
 }
