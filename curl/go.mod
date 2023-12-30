@@ -1,3 +1,3 @@
-module example.com/m
+module github.com/TESLA2402/gocccurl
 
-go 1.20
+go 1.21.5
